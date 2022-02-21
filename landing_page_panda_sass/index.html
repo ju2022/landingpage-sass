@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
+    <title>WisePanda.fr | Formation création de site web en ligne !</title>
+    <meta name="description"
+        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.wisepanda.fr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WisePanda.fr | Formation création de site web en ligne !">
+    <meta property="og:description"
+        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent!">
+    <meta property="og:image" content="./img/og-wisepanda.fr.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="wisepanda.fr">
+    <meta property="twitter:url" content="https://www.wisepanda.fr/">
+    <meta name="twitter:title" content="WisePanda.fr | Formation création de site web en ligne !">
+    <meta name="twitter:description"
+        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent!">
+    <meta name="twitter:image" content="./img/og-wisepanda.fr.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon/favicon.svg" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo du site wisepanda.fr -->
+        <a href="#" class="logo">
+            <img class="logo__img" src="./img/section/logo.svg" alt="logo de wisepanda.fr">
+            <span class="logo__text">WisePanda.fr</span>
+        </a>
+        <!-- Premier bouton call-to-action -->
+        <nav>
+            <ul>
+                <li><a class="btn__cta" onclick="toggle();" href="#">Prévenez-moi!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION PRINCIPALE -->
+    <section>
+        <!-- Image SVG wave -->
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#718096" fill-opacity="1"
+                d="M0,288L48,277.3C96,267,192,245,288,234.7C384,224,480,224,576,197.3C672,171,768,117,864,101.3C960,85,1056,107,1152,101.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <!-- Contenu landing-page -->
+        <div class="contentBox">
+            <h2>Bientôt en ligne</h2>
+            <p>Notre site web est en construction, nous travaillons dur pour vous offrir la meilleure expérience
+                possible !
+                <br> Restez informé pour découvrir quelque chose d'extraordinaire !
+                <br> Inscrivez-vous à notre newsletter.
+            </p>
+            <!-- Compteur de jours restant en javascript -->
+            <div class="countDown">
+                <div class="time">
+                    <div id="day">0</div><span>Jours</span>
+                </div>
+                <div class="time">
+                    <div id="hour">0</div><span>Heures</span>
+                </div>
+                <div class="time">
+                    <div id="minute">0</div><span>Minutes</span>
+                </div>
+                <div class="time">
+                    <div id="second">0</div><span>Secondes</span>
+                </div>
+            </div>
+            <!-- Deuxième bouton call-to-action -->
+            <a class="btn__cta" onclick="toggle();" href="#">Prévenez-moi!</a>
+        </div>
+        <!-- Image du panda-ramen -->
+        <div class="imgBox">
+            <img src="./img/section/panda-ramen.png" alt="panda qui mange des ramens sur le ventre">
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+        <div class="newsletter__title">
+            <h2>Restez connectés</h2>
+            <p>Soyez informé du lancement</p>
+        </div>
+        <!-- Formulaire d'abonnement à la newsletter -->
+        <div class="newsletter__form">
+            <form action="">
+                <input type="email" name="" placeholder="*votre@email.com" required>
+                <input type="submit" value="M'abonner">
+            </form>
+        </div>
+        <!-- Politique de confidentialité RGPD  -->
+        <div class="newsletter__policy">
+            <p>En renseigant votre adresse email, vous acceptez de recevoir chaque semaine nos derniers articles de blog
+                par courrier électronique et vous prenez connaissance de notre <a href="#">Politique de
+                    confidentialité</a>.
+            </p>
+            <p>
+                Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en nous contactant à
+                l'adresse policy@wisepanda.fr
+            </p>
+        </div>
+        <!-- Image pour la fermeture du formulaire -->
+        <img class="close" onclick="toggle();" src="./img/section/close.png" alt="image fermeture formulaire">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copy">
+            Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2021-2022
+        </div>
+    </footer>
+    
+    <!-- MON SCRIPT JS -->
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

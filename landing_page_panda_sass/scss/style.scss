@@ -1,0 +1,7 @@
+//le compilateur recherchera automatiquement _varibles.scss
+
+@use "variables";
+@use "mixin";
+@use "body";
+@use "typographie";
+@use "mediaqueries"as *;

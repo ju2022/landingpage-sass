@@ -1,0 +1,256 @@
+@use "typographie"as *;
+@use "variables"as *;
+@use "mixin"as *;
+
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: $couleur-principale;
+}
+
+//header
+//imbrication scss (nesting)
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+    .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 600;
+        color: $couleur-titre;
+        font-size: $texte * 1.8;
+
+        .logo__img {
+            width: 50px;
+            height: 50px;
+            margin: 6px;
+        }
+    }
+
+    nav {
+        position: relative;
+
+        ul {
+            position: relative;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    background: $couleur-secondaire;
+                    color: $couleur-titre;
+                    font-size: $texte * 1.25;
+                    letter-spacing: 2px;
+                    padding: 15px 35px;
+                    text-decoration: none;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+//  main section
+//imbrication scss (nesting)
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .contentBox {
+        position: relative;
+        max-width: 600px;
+        z-index: 1000;
+
+        h2 {
+            color: $couleur-titre;
+            font-size: $texte * 3.75;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $couleur-titre;
+            font-size: $texte * 1.1;
+        }
+
+        .countDown {
+            display: flex;
+            margin: 20px 0;
+
+            .time {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: $couleur-titre;
+                margin-right: 20px;
+                font-size: $texte * 3;
+                min-width: 110px;
+                font-weight: 700;
+                padding: 10px 5px 15px;
+                border-radius: 4px;
+                color: $couleur-secondaire;
+
+                span {
+                    margin-top: -10px;
+                    font-size: $texte * 1.25;
+                    font-weight: 600;
+                    color: $couleur-principale;
+                }
+            }
+        }
+
+        a {
+            position: relative;
+            margin-top: 10px;
+            display: inline-block;
+            background: $couleur-secondaire;
+            color: $couleur-titre;
+            font-size: $texte * 1.25;
+            letter-spacing: 2px;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 40px;
+        }
+    }
+
+    .imgBox img {
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        margin-top: 130px;
+        z-index: 2;
+    }
+}
+
+//newsletter
+.newsletter.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+//mixins
+.newsletter {
+    @extend %center;
+    @include transform(translate(-50%, -50%));
+    // nous appelons notre mixin avec une largeur de 600px
+    @include rectangle(600px);
+    /*width:600px;*/
+    padding: 60px;
+    background: $couleur-titre;
+    z-index: 10000;
+    box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+    /*-webkit-transform: translate(-50%, -50%);*/
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    .newsletter__title {
+        h2 {
+            color: $couleur-principale;
+            font-size: $texte * 3;
+        }
+
+        p {
+            color: $couleur-principale;
+            font-size: $texte * 1.25;
+        }
+    }
+
+    .newsletter__form {
+        margin-top: 20px;
+
+        input {
+            padding: 10px;
+            border: 1px solid #999;
+            width: 300px;
+            font-size: $texte * 1.125;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            outline: none;
+            width: 140px;
+            color: $couleur-titre;
+            background: $couleur-secondaire;
+            border: 1px solid $couleur-secondaire;
+            letter-spacing: 2px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    }
+
+    .newsletter__policy {
+        margin-top: 10px;
+
+        p {
+            font-size: $texte * 0.75;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+//footer
+//imbrication scss (nesting)
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .copy {
+        position: absolute;
+        bottom: 30px;
+        z-index: 1000;
+        color: $couleur-titre;
+
+        a {
+            text-decoration: none;
+            color: $couleur-principale;
+
+            &:hover {
+                //l'opérateur & permet de répéter le selecteur parent, ici "a"
+                text-decoration: underline;
+                color: $couleur-principale;
+            }
+        }
+    }
+}

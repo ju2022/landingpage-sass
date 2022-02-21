@@ -1,0 +1,19 @@
+// nous creeons un mixin appelé rectangle qui prend une valeur dans $cote
+@mixin rectangle($cote) {
+    width: $cote;
+}
+
+@mixin transform($propriete) {
+    -webkit-transform: $propriete;
+    -ms-transform: $propriete;
+    transform: $propriete;
+}
+
+// nous creeons une extension appelé %center.
+
+%center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

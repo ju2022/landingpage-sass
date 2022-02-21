@@ -1,0 +1,31 @@
+// variables
+
+$couleur-principale: #1a202c;
+$couleur-secondaire: #57bab7;
+$couleur-titre: #edf2f7;
+$couleur-alt: #718096;
+
+// textes
+
+$texte: 1rem;
+
+// boucle pour media queries
+
+$grille: (xsm:381px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+$size: (xsm,
+    sm,
+    md,
+    lg,
+    xl);
+
+$breakpoint: (381px,
+    576px,
+    768px,
+    992px,
+    1200px);

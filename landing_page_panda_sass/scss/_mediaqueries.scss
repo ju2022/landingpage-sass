@@ -1,0 +1,443 @@
+@use "variables"as *;
+
+// media queries
+//header
+header {
+    @media screen and (max-width: 381px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+header nav {
+    @media screen and (max-width: 381px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+header nav ul li a {
+    @media screen and (max-width: 381px) {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        padding: 10px 5px;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        padding: 12px 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        padding: 12px 8px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        padding: 12px 8px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        padding: 12px 8px;
+    }
+}
+
+
+//section
+section {
+    @media screen and (max-width: 381px) {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding-top: 130px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 150px;
+    }
+}
+
+section .contentBox {
+    @media screen and (max-width: 381px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    @media screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 0px;
+        margin-top: 143px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 0px;
+        margin-top: 143px;
+
+    }
+}
+
+section .contentBox h2 {
+    @media screen and (max-width: 381px) {
+        font-size: 1.6rem;
+        line-height: 1.1;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4rem;
+    }
+}
+
+section .contentBox p {
+    @media screen and (max-width: 381px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
+    }
+}
+
+section .contentBox .countDown {
+    @media screen and (max-width: 381px) {
+        margin: 10px 0px;
+    }
+}
+
+section .contentBox .countDown .time {
+    @media screen and (max-width: 381px) {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        border-radius: 50%;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+}
+
+section .contentBox .countDown .time span {
+    @media screen and (max-width: 381px) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+section .contentBox a {
+    @media screen and (max-width: 381px) {
+        width: 150px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 200px;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 200px;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 200px;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 200px;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+section .imgBox img {
+    @media screen and (max-width: 381px) {
+        margin-top: 0;
+        width: 150px;
+        bottom: 45px;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-top: 0;
+        width: 200px;
+        bottom: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+        width: 300px;
+        bottom: 45px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: -45px;
+        width: 700px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-top: -55px;
+        width: 700px;
+    }
+}
+
+section .wave {
+    @media screen and (max-width: 381px) {
+        width: 870px;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 870px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 870px;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 1480px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 1590px;
+    }
+}
+
+//newsletter
+.newsletter {
+    @media screen and (max-width: 381px) {
+        width: 80%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 80%;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.newsletter .newsletter__title h2 {
+    @media screen and (max-width: 381px) {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.newsletter .newsletter__title p {
+    @media screen and (max-width: 381px) {
+        font-size: 0.95rem;
+        line-height: 1;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 0.95rem;
+        line-height: 1;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}
+
+.newsletter .newsletter__form input {
+    @media screen and (max-width: 381px) {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+.newsletter .newsletter__form input[type="submit"] {
+    @media screen and (max-width: 381px) {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 576px) {
+        margin-top: 10px;
+        width: 80%;
+    }
+}
+
+.newsletter .close {
+    @media screen and (max-width: 381px) {
+        top: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    @media screen and (max-width: 576px) {
+        top: 10px;
+        right: 10px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+//footer
+footer {
+    @media screen and (max-width: 381px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+// boucles media queries
+
+@each $size,
+$breakpoint in $grille {
+    @media screen and (max-width:$breakpoint) {
+        section .contentBox .countDown {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section .contentBox .countDown .time {
+            margin-right: 0px;
+        }
+
+        section .contentBox a {
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        section .imgBox {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}
